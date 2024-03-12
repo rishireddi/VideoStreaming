@@ -1,12 +1,9 @@
 # VideoStreaming
-Video streaming using webcam and flask
+Streaming the live video on webpage using flask and in-bulit laptop webcam
 
-#INSTALLATIONS
+# Installation
+ - pip3 install flask
 
--pip3 install flask
-
-#To Run the code:
-
-cd flask_videoStream
-
-run python3 videostream.py
+# To Run code
+ - cd /flask_videoStream
+ - python3 videoStream.py
