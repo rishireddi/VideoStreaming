@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Define the styles for the bounding box and video container */
+        .container {
+            text-align: center;
+        }
+
+        .video-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .bounding-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 10px solid red;
+            box-sizing: border-box;
+            width: 640px; /* Adjust width here */
+            height: 480px; /* Adjust height here */
+        }
+
+        /* Adjust video dimensions */
+        .video-stream {
+            width: 100%; /* Ensure the video fills the container */
+            height: 100%; /* Ensure the video fills the container */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h3 class="mt-5">Live Streaming</h3>
+                <div class="video-container">
+                    <div class="bounding-box"></div>
+                    <img src="{{ url_for('video_feed') }}" class="video-stream">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
